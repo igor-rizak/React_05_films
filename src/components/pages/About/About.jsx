@@ -1,31 +1,34 @@
+import { Link, Outlet } from 'react-router-dom';
+
 export const About = () => {
   return (
-    <>
+    <main>
       <h1>About Us</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro omnis
-        eum, ducimus excepturi animi, earum odit ut in ratione laboriosam
-        nesciunt quae hic. Perspiciatis ad est minus magnam voluptatem beatae
-        consequatur veritatis dignissimos placeat atque dolore voluptate maiores
-        pariatur, animi, molestiae totam similique ea. Eius nulla, autem nemo
-        quisquam quae mollitia! Cumque enim maxime aliquam voluptate a est harum
-        dolore, odit eaque ipsam ab illum doloremque vero quaerat? Accusamus
-        iure quasi nobis accusantium laborum maiores voluptatum eius dolor
-        laudantium facilis. Temporibus delectus eaque amet, aspernatur quo
-        fugiat. Cum sequi id expedita asperiores perferendis aliquid. Neque
-        possimus delectus fugit distinctio quod tenetur maxime dolor,
-        consequatur voluptate culpa aspernatur quibusdam pariatur ad error
-        laborum? Voluptas, ducimus. Debitis vero ex fugiat tenetur nihil, maxime
-        provident laboriosam velit suscipit animi minus aperiam explicabo nemo
-        fuga sapiente a earum incidunt distinctio nam enim quasi! Provident
-        aliquid eveniet consequuntur velit quaerat, a culpa temporibus non! Nam,
-        ab nihil nemo, eius enim eveniet aut sequi asperiores repellat ratione
-        obcaecati, architecto voluptatum laboriosam. Quisquam hic in corrupti,
-        reprehenderit maiores similique eum quam a. Autem repellat est commodi
-        aspernatur odit repudiandae perspiciatis, quae fugiat iusto molestiae
-        omnis quaerat quo facilis, rerum labore quis voluptates non debitis,
-        aliquid voluptas numquam?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+        laborum amet ab cumque sit nihil dolore modi error repudiandae
+        perspiciatis atque voluptas corrupti, doloribus ex maiores quam magni
+        mollitia illum dolor quis alias in sequi quod. Sunt ex numquam hic
+        asperiores facere natus sapiente cum neque laudantium quam, expedita
+        voluptates atque quia aspernatur saepe illo, rem quasi praesentium
+        aliquid sed inventore obcaecati veniam? Nisi magnam vero, dolore
+        praesentium totam ducimus similique asperiores culpa, eius amet
+        repudiandae quam ut. Architecto commodi, tempore ut nostrum voluptas
+        dolorum illum voluptatum dolores! Quas perferendis quis alias excepturi
+        eaque voluptatibus eveniet error, nulla rem iusto?
       </p>
-    </>
+      <ul>
+        <li>
+          <Link to="mission">Read about our mission</Link>
+        </li>
+        <li>
+          <Link to="team">Get to know the team</Link>
+        </li>
+        <li>
+          <Link to="reviews">Go through the reviews</Link>
+        </li>
+      </ul>
+      <Outlet />
+    </main>
   );
 };

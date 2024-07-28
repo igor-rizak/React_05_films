@@ -1,13 +1,16 @@
+import { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import { Home } from './pages/Home/Home.jsx';
-import { About } from './pages/About/About.jsx';
-import { Products } from './pages/Products/Products.jsx';
-import { ProductDetails } from './pages/ProductDetails/ProductDetails.jsx';
-import { Mission } from './Mission/Mission.jsx';
-import { Team } from './Team/Team.jsx';
-import { Reviews } from './Reviews/Reviews.jsx';
-import { SharedLayout } from './SharedLayout/SharedLayout.jsx';
+const Home = lazy(() => import('../pages/Home/Home.jsx'));
+const About = lazy(() => import('../pages/About/About.jsx'));
+const Products = lazy(() => import('../pages/Products/Products.jsx'));
+const ProductDetails = lazy(() =>
+  import('../pages/ProductDetails/ProductDetails.jsx')
+);
+const SharedLayout = lazy(() => import('./SharedLayout/SharedLayout.jsx'));
+const Mission = lazy(() => import('./Mission/Mission.jsx'));
+const Team = lazy(() => import('./Team/Team.jsx'));
+const Reviews = lazy(() => import('./Reviews/Reviews.jsx'));
 
 export const App = () => {
   return (
